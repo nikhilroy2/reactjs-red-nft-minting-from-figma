@@ -1,0 +1,9 @@
+#Header{
+    .nav-link{
+        color: white;
+        font-family: 'Outfit', sans-serif;
+        &:hover{
+            opacity: .7;
+        }
+    }
+}

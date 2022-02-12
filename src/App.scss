@@ -1,0 +1,42 @@
+// ......................... Global Styles......................
+@font-face {
+  font-family: turis;
+  src: url(./Static/fonts/FontsFree-Net-TurismoCF-100.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: turis;
+}
+
+body {
+  max-width: 1140px;
+  margin: auto;
+  background: #000;
+}
+// ......................... Global Styles......................End
+
+// custom classes......font
+.family_outfit {
+  font-family: "Outfit", sans-serif;
+}
+.family_turis {
+  font-family: turis;
+}
+
+// ...custom background, text......
+
+.text_red {
+  color: #da0000 !important;
+}
+
+// ............ btn.....
+
+.btn_red {
+  background: #da0000;
+  color: white!important;
+  font-family: "Outfit", sans-serif;
+  &:hover{
+      background: rgba(218, 0, 0, 0.8);
+  }
+}

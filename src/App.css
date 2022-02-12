@@ -1,1 +1,39 @@
-/* No CSS *//*# sourceMappingURL=App.css.map */
+@font-face {
+  font-family: turis;
+  src: url(./Static/fonts/FontsFree-Net-TurismoCF-100.ttf);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: turis;
+}
+
+body {
+  max-width: 1140px;
+  margin: auto;
+  background: #000;
+}
+
+.family_outfit {
+  font-family: "Outfit", sans-serif;
+}
+
+.family_turis {
+  font-family: turis;
+}
+
+.text_red {
+  color: #da0000 !important;
+}
+
+.btn_red {
+  background: #da0000;
+  color: white !important;
+  font-family: "Outfit", sans-serif;
+}
+
+.btn_red:hover {
+  background: rgba(218, 0, 0, 0.8);
+}
+/*# sourceMappingURL=App.css.map */
