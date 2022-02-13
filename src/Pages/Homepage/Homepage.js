@@ -375,7 +375,6 @@ function Section7() {
                       </span>
                       <p className="family_outfit">{v.description}</p>
                     </div>
-                    G
                   </div>
                 </div>
               );
