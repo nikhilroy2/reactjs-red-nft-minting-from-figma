@@ -1,0 +1,15 @@
+#CollectionSlider button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+#CollectionSlider .swiper_body_wrapper img {
+  width: 100%;
+}
+
+#CollectionSlider .btn_slider_box svg {
+  width: 100px;
+  height: 100px;
+}
+/*# sourceMappingURL=CollectionSlider.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,iBADe,CACf,MAAM,CAAC;EACL,UAAU,EAAE,WAAW;EACvB,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;CACd;;AALH,AAOI,iBAPa,CAMf,oBAAoB,CAClB,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;CACZ;;AATL,AAYI,iBAZa,CAWf,eAAe,CACb,GAAG,CAAC;EACF,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;CACd",
+    "sources": [
+        "CollectionSlider.scss"
+    ],
+    "names": [],
+    "file": "CollectionSlider.css"
+}
