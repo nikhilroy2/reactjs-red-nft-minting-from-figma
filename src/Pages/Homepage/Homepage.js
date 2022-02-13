@@ -10,6 +10,9 @@ function Homepage(props) {
       <Section3></Section3>
       <Section4></Section4>
       <Section5></Section5>
+      <Section6></Section6>
+      <Section7></Section7>
+      <Section8></Section8>
     </div>
   );
 }
@@ -210,6 +213,50 @@ function Section4() {
 }
 
 function Section5() {
+  const roadmap_object = [
+    {
+      id: 1,
+      img: require("../../Static/img/roadmap_img/1.png"),
+      description: `Whitelist will be open in March for partners and individuals
+      who completed required tasks.`,
+    },
+    {
+      id: 2,
+      img: require("../../Static/img/roadmap_img/2.png"),
+      description: `Raffle registration for public sale in mid March 2022.`,
+    },
+    {
+      id: 3,
+      img: require("../../Static/img/roadmap_img/3.png"),
+      description: `Exclusive air drop for red girl holders including brands collaboration.`,
+    },
+    // for roadmap styleing id
+    {
+      id: 6,
+      img: require("../../Static/img/roadmap_img/6.png"),
+      description: `There will be access for the red girl to use in these metaverse.`,
+    },
+    {
+      id: 5,
+      img: require("../../Static/img/roadmap_img/5.png"),
+      description: `We are metaverse ready. We have acquired large piece of lands in both sandbox and decentraland.`,
+    },
+    {
+      id: 4,
+      img: require("../../Static/img/roadmap_img/4.png"),
+      description: `Limited edition art piece. We will giveaway limited number of red girl sculpture to NFT owners.`,
+    },
+    {
+      id: 7,
+      img: require("../../Static/img/roadmap_img/7.png"),
+      description: `Exclusive ‘red girl’ party event for token holders.`,
+    },
+    {
+      id: 8,
+      img: require("../../Static/img/roadmap_img/8.png"),
+      description: `Tokenization of Sko1y’s physical painting, resvered only for our community.`,
+    },
+  ];
   return (
     <section id="Section5">
       <div className="section_container py-3 py-md-5">
@@ -219,7 +266,132 @@ function Section5() {
             Goals and strategies in long-term
           </span>
         </div>
+
+        <div className="body_styles">
+          <div className="row g-3">
+            {roadmap_object.map((v) => {
+              return (
+                <div className="col-lg-4" key={v.id}>
+                  <div className="col_wrapper text-center">
+                    <div className="item_wrapper mb-3">
+                      <img src={v.img} alt="img" />
+                    </div>
+                    <p>{v.description}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
+    </section>
+  );
+}
+
+function Section6() {
+  return (
+    <section id="Section6">
+      <div className="section_container p-3 p-md-5">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="col_wrapper">
+              <img src={require("../../Static/img/kaboom.png")} alt="img" />
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="col_wrapper">
+              <h2 className="mb-3">About KABOOM Lab</h2>
+              <p className="family_outfil">
+                Kaboom is a WEB3 laboratory comprised professionals from art
+                world to crypto sharing the same vision and coming together, to
+                create dynamic, diverse, empowering digital collectible and
+                thriving community. We think there is a huge gap between artists
+                and crypto, physical and digital, virtual and reality. Kaboom
+                lab aim to act as a bridge between them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Section7() {
+  const team_member_object = [
+    {
+      id: 1,
+      img: require("../../Static/img/team_members/team1.png"),
+      name: "Thor Chan",
+      subName: "The Tech Guru",
+      description: `CEO of AAX.com. COO of FDT. He is also an investor and
+      advisor in various Layer 2 solution, Defi, GameFi and NFT
+      projects.`,
+    },
+    {
+      id: 2,
+      img: require("../../Static/img/team_members/team2.png"),
+      name: "Uncle Paul",
+      subName: "Metaverse and NFT OG",
+      description: `Paul is an enthusiastic
+      NFT collector while one of the earliest believer in metaverse. He is one of the biggest landowner in Sandbox.`,
+    },
+    {
+      id: 3,
+      img: require("../../Static/img/team_members/team3.png"),
+      name: "San",
+      subName: "Creative director",
+      description: `San has worked with different artists over the past 10 years. His clients include famous art spaces and gallery in Asia.`,
+    },
+    {
+      id: 4,
+      img: require("../../Static/img/team_members/team4.png"),
+      name: "JimmyW",
+      subName: "Moderator",
+      description: `Jimmy sourced capital for a number of businesses in the Blockchain space. He advises some of the startups in the industry.`,
+    },
+  ];
+  return (
+    <section id="Section7">
+      <div className="section_container py-3">
+        <div className="title_styles text-center py-3 py-md-5">
+          <img src={require("../../Static/img/arrow.png")} alt="img" />
+          <h2 className="mb-3 mt-4 text-uppercase"> Team Kaboom</h2>
+          <span className="family_outfit font_18">
+            The best professionals we are proud of
+          </span>
+        </div>
+
+        <div className="body_styles">
+          <div className="row g-3 g-md-5">
+            {team_member_object.map((v) => {
+              return (
+                <div className="col-12 col-sm-6 col-lg-4 col-xl-3" key={v.id}>
+                  <div className="col_wrapper text-center">
+                    <img src={v.img} className="w-100" alt="img" />
+
+                    <div className="col_content py-3">
+                      <h5 className="my-2">{v.name}</h5>
+                      <span className="font_18 font-weight-bold text_red family_outfit d-block py-2">
+                        {v.subName}
+                      </span>
+                      <p className="family_outfit">{v.description}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Section8() {
+  return (
+    <section id="Sectino8">
+      <div className="section_container"></div>
     </section>
   );
 }

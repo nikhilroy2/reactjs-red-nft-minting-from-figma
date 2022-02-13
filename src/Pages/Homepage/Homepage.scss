@@ -59,4 +59,19 @@
       object-fit: cover;
     }
   }
+  #Section5{
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: url('../../Static/img/roadmap_img/roadmap_gradient.png') right center/contain no-repeat;
+    }
+  }
+  #Section6{
+    background: url('../../Static/img/kaboom_bg_banner.png') center/100% 100% no-repeat;
+  }
 }
