@@ -10,10 +10,14 @@
 }
 
 body {
-  max-width: 1140px;
+  max-width: 1440px;
   margin: auto;
   background: #111112;
   color: #fff;
+}
+section,header,footer {
+  padding-left: 80px;
+  padding-right: 80px;
 }
 // ......................... Global Styles......................End
 
@@ -22,16 +26,19 @@ h1 {
   font-size: 45px;
   line-height: 140%;
 }
-h2{
+h2 {
   font-size: 40px;
 }
-h4{
+h4 {
   font-size: 24px;
 }
-h5{
+h5 {
   font-size: 20px;
 }
-span.font_18{
+h6 {
+  font-size: 14px;
+}
+span.font_18 {
   font-size: 18px;
 }
 // ..................Headings..............End
@@ -59,6 +66,9 @@ p {
   color: #da0000 !important;
 }
 
+.bg_transparent {
+  background: transparent;
+}
 // ............ btn.....
 
 .btn_red {

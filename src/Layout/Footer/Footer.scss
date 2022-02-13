@@ -1,0 +1,34 @@
+#Footer {
+    position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+    height: 350%;
+    background: url("../../Static/img/gradient.png") left bottom/contain
+      no-repeat;
+    pointer-events: none;
+    opacity: 0.7;
+  }
+
+  .form_control_wrapper {
+    border: 1px solid rgba(255, 255, 255, 0.418);
+    input {
+      width: calc(100% - 80px);
+      font-family: "Outfit", sans-serif;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: white;
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    button {
+      color: #111112 !important;
+      font-weight: bold;
+    }
+  }
+}

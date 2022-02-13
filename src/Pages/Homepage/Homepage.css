@@ -3,7 +3,7 @@
 }
 
 #Homepage #Section1::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -46,7 +46,7 @@
 }
 
 #Homepage #Section1 .presale_starting_box span {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 #Homepage #Section1 .presale_starting_box * {
@@ -62,7 +62,7 @@
   padding: 15px;
 }
 
-#Homepage #Section4 {
+#Homepage #Section4 .section_container {
   background: url("../../Static/img/skoly_bg_banner.png") center/100% 100% no-repeat;
 }
 
@@ -77,7 +77,7 @@
 }
 
 #Homepage #Section5::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 0;
@@ -86,7 +86,59 @@
   background: url("../../Static/img/roadmap_img/roadmap_gradient.png") right center/contain no-repeat;
 }
 
-#Homepage #Section6 {
+#Homepage #Section6 .section_container {
   background: url("../../Static/img/kaboom_bg_banner.png") center/100% 100% no-repeat;
+}
+
+#Homepage #Section7 {
+  position: relative;
+}
+
+#Homepage #Section7::after {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  right: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url("../../Static/img/team_gradient.png") right 0/contain no-repeat;
+  opacity: 0.5;
+}
+
+#Homepage #Section8 {
+  position: relative;
+  /* Custom style */
+}
+
+#Homepage #Section8 .accordion-button:not(.collapsed):after {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e") !important;
+}
+
+#Homepage #Section8 .accordion_wrapper {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#Homepage #Section8 .accordion-button {
+  background: transparent;
+  color: white !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#Homepage #Section8 .accordion-body {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#Homepage #Section8 .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  -webkit-transform: scale(0.7) !important;
+          transform: scale(0.7) !important;
+}
+
+#Homepage .accordion-item {
+  background: transparent;
 }
 /*# sourceMappingURL=Homepage.css.map */

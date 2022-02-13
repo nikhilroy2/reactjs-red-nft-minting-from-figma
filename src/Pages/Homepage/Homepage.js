@@ -361,7 +361,6 @@ function Section7() {
             The best professionals we are proud of
           </span>
         </div>
-
         <div className="body_styles">
           <div className="row g-3 g-md-5">
             {team_member_object.map((v) => {
@@ -369,7 +368,6 @@ function Section7() {
                 <div className="col-12 col-sm-6 col-lg-4 col-xl-3" key={v.id}>
                   <div className="col_wrapper text-center">
                     <img src={v.img} className="w-100" alt="img" />
-
                     <div className="col_content py-3">
                       <h5 className="my-2">{v.name}</h5>
                       <span className="font_18 font-weight-bold text_red family_outfit d-block py-2">
@@ -377,6 +375,7 @@ function Section7() {
                       </span>
                       <p className="family_outfit">{v.description}</p>
                     </div>
+                    G
                   </div>
                 </div>
               );
@@ -390,8 +389,176 @@ function Section7() {
 
 function Section8() {
   return (
-    <section id="Sectino8">
-      <div className="section_container"></div>
+    <section id="Section8">
+      <div className="section_container py-3 py-md-5">
+        <h2 className="mb-3 mb-md-5">FAQ</h2>
+        <div className="accordion_wrapper">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingOne">
+              <button
+                className="accordion-button"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                What is Metamask?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              className="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-mdb-parent="#accordionExample"
+            >
+              <div className="accordion-body">
+                <p>
+                  MetaMask is a software cryptocurrency wallet used to interact
+                  with the Ethereum blockchain. It allows users to access their
+                  Ethereum wallet through a browser extension or mobile app,
+                  which can then be used to interact with decentralized
+                  applications.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingTwo">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                How to mint with Metamask on a mobile phone?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              className="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-mdb-parent="#accordionExample"
+            >
+              <div className="accordion-body">
+                <p>
+                  MetaMask allows you to display and transfer your NFTs/ERC-721
+                  tokens directly. ... From there, you can mint, own, and manage
+                  your NFTs with seamless and complete control no matter where
+                  you are.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingThree">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                How to mint with Metamask on a computer?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              className="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-mdb-parent="#accordionExample"
+            >
+              <div className="accordion-body">
+                <ol>
+                  <li className="px-2">
+                    Download and install the MetaMask extension for your
+                    browser.
+                  </li>
+                  <li className="px-2">Click on the “Get Started” button.</li>
+
+                  <li className="px-2">
+                    Select “Create a Wallet” and create a password.
+                  </li>
+
+                  <li className="px-2">
+                    Write down, store, or memorize your Secret Backup Phrase.
+                  </li>
+
+                  <li className="px-2">
+                    Confirm your Secret Backup Phrase to ensure you have it
+                    correct.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingFour">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Buying NFT for the first time?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              className="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-mdb-parent="#accordionExample"
+            >
+              <div className="accordion-body">
+                <p>
+                  Get the Metamask Chrome or Firefox extension. Load it with ETH
+                  through services that allow you to change your money to ETH
+                  like Coinbase, Binance or Kraken. Then, click the button
+                  "MINT" on the scary banner to connect your wallet and approve
+                  the transaction on Metamask. That’s it !
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingFive">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Where does my NFT go after I purchase?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              className="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-mdb-parent="#accordionExample"
+            >
+              <div className="accordion-body">
+                <p>
+                  Today the company is bringing NFTs to the desktop browser. ...
+                  People who use Coinbase Wallet for desktop browsers will soon
+                  see a new tab called “NFTs,” which will let you access the
+                  non-fungible tokens (NFTs) associated with your wallet
+                  address.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
