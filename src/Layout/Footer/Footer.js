@@ -40,6 +40,7 @@ function Footer(props) {
               {/* Icon */}
               <a className="text-reset me-3" href="#">
                 <svg
+                  className="icon_opacity_full"
                   width={44}
                   height={44}
                   viewBox="0 0 44 44"
@@ -76,6 +77,7 @@ function Footer(props) {
 
               <a className="text-reset me-3" href="#">
                 <svg
+                  className="icon_opacity_full"
                   width="44"
                   height="44"
                   viewBox="0 0 44 44"
@@ -100,6 +102,7 @@ function Footer(props) {
 
               <a className="text-reset me-3" href="#">
                 <svg
+                  className="icon_opacity_full"
                   width={44}
                   height={44}
                   viewBox="0 0 44 44"
