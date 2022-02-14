@@ -110,9 +110,9 @@ function Section1() {
           </div>
           <div className="col-md-6 order-1 order-md-2">
             <div className="col_wrapper">
-              <h2 className="mb-3 mb-md-5">About RED girl</h2>
+              <h2 className="mb-3 mb-md-5" id="about_red_girl">About RED girl</h2>
 
-              <p>
+              <p >
                 “When I started working on the RED GIRL characters, I planned
                 they would all be the same. But they didn't "listen" to me
                 eventually and each drawing became unique, like everyone of us.
@@ -126,7 +126,7 @@ function Section1() {
                 things. They seemed to come alive and brought me to them.”
               </p>
 
-              <div className="user_info d-flex align-items-center">
+              <div className="user_info d-flex align-items-center" >
                 <img
                   src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
                   className="rounded-circle me-4"
@@ -196,7 +196,7 @@ function Section3() {
 function Section4() {
   return (
     <section id="Section4">
-      <div className="section_container">
+      <div className="section_container" id="Skolyshev">
         <div className="content p-3 p-md-5">
           <h2 className="mb-3 mb-md-5"> Skolyshev</h2>
 
@@ -279,7 +279,7 @@ function Section5() {
     <section id="Section5">
       <div className="section_container py-3 py-md-5 px-3 px-md-0">
         <div className="title_styles text-center py-3 py-md-5">
-          <h2 className="mb-2"> Red Girl NFT Roadmap</h2>
+          <h2 className="mb-2" id="roadmap_girl"> Red Girl NFT Roadmap</h2>
           <span className="text-white-50 family_outfit">
             Goals and strategies in long-term
           </span>
@@ -290,7 +290,7 @@ function Section5() {
             {roadmap_object.map((v) => {
               return (
                 <div className="col-lg-4" key={v.id}>
-                  <div className="col_wrapper text-center d-flex d-lg-block  align-items-center">
+                  <div className="col_wrapper text-start text-lg-center d-flex d-lg-block  align-items-center">
                     <div className="item_wrapper mb-3 me-4 me-lg-0">
                       <img src={v.img} alt="img" />
                     </div>
@@ -318,7 +318,7 @@ function Section6() {
           </div>
           <div className="col-md-6">
             <div className="col_wrapper p-4">
-              <h2 className="mb-3">About KABOOM Lab</h2>
+              <h2 className="mb-3" id="kaboom_lab">About KABOOM Lab</h2>
               <p className="family_outfil">
                 Kaboom is a WEB3 laboratory comprised professionals from art
                 world to crypto sharing the same vision and coming together, to
@@ -408,7 +408,7 @@ function Section8() {
   return (
     <section id="Section8">
       <div className="section_container py-3 py-md-5 px-3 px-md-0">
-        <h2 className="mb-3 mb-md-5">FAQ</h2>
+        <h2 className="mb-3 mb-md-5" id="faq">FAQ</h2>
         <div className="accordion_wrapper">
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingOne">

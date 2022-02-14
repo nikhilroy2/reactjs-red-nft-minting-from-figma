@@ -86,29 +86,29 @@ function Navbar() {
               </button>
             </li>
             <li className="nav-item">
-              <a className="nav-link ms-xl-4" href="#">
+              <a className="nav-link ms-xl-4" href="#about_red_girl">
                 About RED
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link ms-xl-4" href="#">
+              <a className="nav-link ms-xl-4" href="#Skolyshev">
                 SKOLYSHEV
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link ms-xl-4" href="#">
+              <a className="nav-link ms-xl-4" href="#roadmap_girl">
                 Roadmap
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link ms-xl-4" href="#">
+              <a className="nav-link ms-xl-4" href="#kaboom_lab">
                 Kaboom Lab
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link ms-xl-4" href="#">
+              <a className="nav-link ms-xl-4" href="#faq">
                 FAQ
               </a>
             </li>
