@@ -1,9 +1,25 @@
 #Header .nav-link {
   color: white;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 #Header .nav-link:hover {
-  opacity: .7;
+  opacity: 0.7;
+}
+
+@media (max-width: 1199px) {
+  #Header .navbar_nav_mobile {
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media (max-width: 1199px) {
+  #Header .navbar-collapse {
+    background: url("../../Static/img/mobile_header_bg.png") left bottom/100% 100% no-repeat;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

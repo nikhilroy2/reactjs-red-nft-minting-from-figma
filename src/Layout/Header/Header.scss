@@ -1,9 +1,26 @@
-#Header{
-    .nav-link{
-        color: white;
-        font-family: 'Outfit', sans-serif;
-        &:hover{
-            opacity: .7;
-        }
+#Header {
+  .nav-link {
+    color: white;
+    font-family: "Outfit", sans-serif;
+    &:hover {
+      opacity: 0.7;
     }
+  }
+  .navbar_nav_mobile {
+    @media (max-width: 1199px) {
+      margin-top: 20px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border: {
+        top: 1px solid rgba(255, 255, 255, 0.1);
+        bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  .navbar-collapse {
+    @media (max-width: 1199px) {
+      background: url("../../Static/img/mobile_header_bg.png") left bottom/ 100%
+        100% no-repeat;
+    }
+  }
 }

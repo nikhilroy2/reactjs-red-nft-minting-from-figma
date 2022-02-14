@@ -19,6 +19,12 @@ section,header,footer {
   padding-left: 80px;
   padding-right: 80px;
 }
+@media (max-width: 791px){
+  section,header,footer {
+    padding-left: 0px;
+    padding-right: 0px;
+  } 
+}
 // ......................... Global Styles......................End
 
 // ..................Headings..............
@@ -79,3 +85,15 @@ p {
     background: rgba(218, 0, 0, 0.8);
   }
 }
+.btn_hover_effect:hover{
+  opacity: .8;
+}
+
+
+// .......Icon hover effect..........
+.icon_opacity_full:hover{
+  svg,rect{
+    opacity: 1!important;
+  }
+}
+// .......Icon hover effect..........End

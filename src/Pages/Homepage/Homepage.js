@@ -82,7 +82,7 @@ function Section1() {
                 <Countdown date={"2023-02-01T01:02:03"} renderer={renderer} />
 
                 <div className="btn_box mt-2">
-                  <button className="btn font-weight-bold w-100 rounded-pill bg-white text-black">
+                  <button className="btn btn_hover_effect font-weight-bold w-100 rounded-pill bg-white text-black">
                     Get Whitlisted Now
                   </button>
                 </div>
@@ -257,6 +257,8 @@ function Section5() {
       description: `Tokenization of Sko1y’s physical painting, resvered only for our community.`,
     },
   ];
+  // const roadmap_object_mobile = roadmap_object.filter((v,id)=> id+1 < v.id);
+  // console.log(roadmap_object_mobile);
   return (
     <section id="Section5">
       <div className="section_container py-3 py-md-5">

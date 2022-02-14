@@ -21,6 +21,13 @@ section, header, footer {
   padding-right: 80px;
 }
 
+@media (max-width: 791px) {
+  section, header, footer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 h1 {
   font-size: 45px;
   line-height: 140%;
@@ -77,5 +84,13 @@ p {
 
 .btn_red:hover {
   background: rgba(218, 0, 0, 0.8);
+}
+
+.btn_hover_effect:hover {
+  opacity: .8;
+}
+
+.icon_opacity_full:hover svg, .icon_opacity_full:hover rect {
+  opacity: 1 !important;
 }
 /*# sourceMappingURL=App.css.map */
