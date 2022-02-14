@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Homepage.css";
 import Countdown from "react-countdown";
 import CollectionSlider from "../../Components/CollectionSlider/CollectionSlider";
@@ -20,6 +20,90 @@ function Homepage(props) {
 export default Homepage;
 
 function Section1() {
+  return (
+    <section id="Section1">
+      <div className="section_container py-3 py-md-5 px-3 px-md-0">
+        <div className="row g-xl-0 justify-content-center">
+          <div className="col-lg-6 ">
+            <div className="box p-3 p-md-0">
+              <h1 className="text-uppercase">
+                Discover Rare Collection of NFT
+              </h1>
+              <p>
+                “Everything or nothing. Here I am, in front of me is the World
+                of Art - there is no turning back and I will force myself to
+                love.”
+              </p>
+
+              <div className="nft_box d-none d-md-block my-3 my-md-5"></div>
+            </div>
+          </div>
+          <div className="col-12 col-md-5 col-lg-6">
+            <div className="col_wrapper position-relative">
+              <img
+                className="presale_img"
+                src={require("../../Static/img/presale_img.png")}
+                alt="img"
+              />
+              <div className="presale_starting_box px-3 px-md-5 py-2 py-md-4 ">
+                <PresaleBox></PresaleBox>
+                {/* <MintBox></MintBox> */}
+                {/* <AllSoldOut></AllSoldOut> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="section_container py-5 mt-5 px-3 px-md-0">
+        <div className="row">
+          <div className="col-md-6 order-2 order-md-1">
+            <div className="col_wrapper">
+              <img
+                className="w-100"
+                src={require("../../Static/img/red_girl_img.png")}
+                alt="img"
+              />
+            </div>
+          </div>
+          <div className="col-md-6 order-1 order-md-2">
+            <div className="col_wrapper">
+              <h2 className="mb-3 mb-md-5" id="about_red_girl">
+                About RED girl
+              </h2>
+
+              <p>
+                “When I started working on the RED GIRL characters, I planned
+                they would all be the same. But they didn't "listen" to me
+                eventually and each drawing became unique, like everyone of us.
+                <br />
+                <br />
+                RED GIRLS have a lot in common, but each one is completely
+                different. Everyone has different emotional content and external
+                details. There is no complete repetition. They are similar but
+                they are not clones. Everyone is unique and everyone has their
+                own emotions, personality. Therefore, they are like living
+                things. They seemed to come alive and brought me to them.”
+              </p>
+
+              <div className="user_info d-flex align-items-center">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                  className="rounded-circle me-4"
+                  style={{ width: "50px" }}
+                  alt="Avatar"
+                />
+                <h5 className="text_red">skolyshev</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const PresaleBox = () => {
   // Random component
   const Completionist = () => <h2 className="text-center">All Sold Out</h2>;
 
@@ -56,93 +140,112 @@ function Section1() {
       );
     }
   };
-
   return (
-    <section id="Section1">
-      <div className="section_container py-3 py-md-5 px-3 px-md-0">
-        <div className="row g-xl-0 justify-content-center">
-          <div className="col-lg-6 ">
-            <div className="box p-3 p-md-0">
-              <h1 className="text-uppercase">
-                Discover Rare Collection of NFT
-              </h1>
-              <p>
-                “Everything or nothing. Here I am, in front of me is the World
-                of Art - there is no turning back and I will force myself to
-                love.”
-              </p>
-
-              <div className="nft_box d-none d-md-block my-3 my-md-5"></div>
-            </div>
-          </div>
-          <div className="col-12 col-md-5 col-lg-6">
-            <div className="col_wrapper position-relative">
-              <img
-                className="presale_img"
-                src={require("../../Static/img/presale_img.png")}
-                alt="img"
-              />
-              <div className="presale_starting_box px-3 px-md-5 py-2 py-md-4 text-center">
-                <h4 className="mb-3 mb-md-4">Pre-sale starting in</h4>
-                <Countdown date={"2023-02-01T01:02:03"} renderer={renderer} />
-
-                <div className="btn_box mt-2">
-                  <button className="btn btn_hover_effect text-capitalize font-weight-bold w-100 rounded-pill bg-white text-black">
-                    Get Whitlisted Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <>
+      <h4 className="mb-3 mb-md-4 text-center">Pre-sale starting in</h4>
+      <Countdown date={"2023-02-01T01:02:03"} renderer={renderer} />
+      <div className="btn_box mt-2 text-center">
+        <button className="btn btn_hover_effect text-capitalize font-weight-bold w-100 rounded-pill bg-white text-black">
+          Get Whitlisted Now
+        </button>
       </div>
-
-      <div className="section_container py-5 mt-5 px-3 px-md-0">
-        <div className="row">
-          <div className="col-md-6 order-2 order-md-1">
-            <div className="col_wrapper">
-              <img
-                className="w-100"
-                src={require("../../Static/img/red_girl_img.png")}
-                alt="img"
-              />
-            </div>
-          </div>
-          <div className="col-md-6 order-1 order-md-2">
-            <div className="col_wrapper">
-              <h2 className="mb-3 mb-md-5" id="about_red_girl">About RED girl</h2>
-
-              <p >
-                “When I started working on the RED GIRL characters, I planned
-                they would all be the same. But they didn't "listen" to me
-                eventually and each drawing became unique, like everyone of us.
-                <br />
-                <br />
-                RED GIRLS have a lot in common, but each one is completely
-                different. Everyone has different emotional content and external
-                details. There is no complete repetition. They are similar but
-                they are not clones. Everyone is unique and everyone has their
-                own emotions, personality. Therefore, they are like living
-                things. They seemed to come alive and brought me to them.”
-              </p>
-
-              <div className="user_info d-flex align-items-center" >
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                  className="rounded-circle me-4"
-                  style={{ width: "50px" }}
-                  alt="Avatar"
-                />
-                <h5 className="text_red">skolyshev</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </>
   );
-}
+};
 
+const MintBox = () => {
+  const [amountCounter, setAmountCounter] = useState(1);
+  return (
+    <>
+      <div className="d-flex flex-wrap justify-content-between mb-3 mb-md-4">
+        <h4 className="mb-0">Red Vamp Girl</h4>
+        <h5 className="text-white-50">134 / 888</h5>
+      </div>
+
+      <div className="amount_counter_action">
+        <div className="d-flex flex-wrap justify-content-between mb-3 mb-md-4">
+          <h2>0.2 ETH</h2>
+
+          <div className="counter_btn_wrapper d-flex align-items-center">
+            <button
+              className="btn m-0 p-0 rounded-circle shadow-0"
+              onClick={() => setAmountCounter(amountCounter + 1)}
+            >
+              <svg
+                width={40}
+                height={40}
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  r="19.5"
+                  transform="matrix(-1 0 0 1 20 20)"
+                  stroke="white"
+                  strokeOpacity="0.3"
+                />
+                <path d="M27 20H13" stroke="white" strokeWidth={2} />
+                <path d="M20 27L20 13" stroke="white" strokeWidth={2} />
+              </svg>
+            </button>
+            <b className="counter px-4 font-weight-bold text-white">
+              {amountCounter}
+            </b>
+
+            <button
+              className="btn m-0 p-0 rounded-circle shadow-0"
+              onClick={() => setAmountCounter(amountCounter - 1)}
+            >
+              <svg
+                width={40}
+                height={40}
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  r="19.5"
+                  transform="matrix(-1 0 0 1 20 20)"
+                  stroke="white"
+                  strokeOpacity="0.3"
+                />
+                <path
+                  opacity="0.5"
+                  d="M27 20H13"
+                  stroke="white"
+                  strokeWidth={2}
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="btn_box mt-2">
+        <button className="btn btn_hover_effect text-capitalize font-weight-bold w-100 rounded-pill bg-white text-black">
+          Get Whitlisted Now
+        </button>
+      </div>
+    </>
+  );
+};
+const AllSoldOut = () => {
+  return (
+    <>
+      <h4 className="mb-3 mb-md-4 text-center py-3">All Sold Out</h4>
+
+      <div className="btn_box mt-2">
+        <button className="btn d-flex align-items-center justify-content-center btn_hover_effect text-capitalize font-weight-bold w-100 rounded-pill bg-white text-black">
+          <img
+            className="me-2"
+            src={require("../../Static/img/opensea.png")}
+            alt="img"
+          />{" "}
+          Buy on Opensea
+        </button>
+      </div>
+    </>
+  );
+};
 function Section2() {
   return (
     <section id="Section2">
@@ -233,68 +336,108 @@ function Section5() {
     {
       id: 1,
       img: require("../../Static/img/roadmap_img/1.png"),
-      description: `Whitelist will be open in March for partners and individuals
-      who completed required tasks.`,
+      description: (
+        <>
+          Whitelist will be open in March for <br /> partners and individuals
+          who <br /> completed required tasks.
+        </>
+      ),
     },
     {
       id: 2,
       img: require("../../Static/img/roadmap_img/2.png"),
-      description: `Raffle registration for public sale in mid March 2022.`,
+      description: (
+        <>
+          Raffle registration for public sale <br /> in mid March 2022.
+        </>
+      ),
     },
     {
       id: 3,
       img: require("../../Static/img/roadmap_img/3.png"),
-      description: `Exclusive air drop for red girl holders including brands collaboration.`,
+      description: (
+        <>
+          Exclusive air drop for red girl <br /> holders including brands <br />{" "}
+          collaboration.
+        </>
+      ),
     },
     // for roadmap styleing id
     {
       id: 6,
       img: require("../../Static/img/roadmap_img/6.png"),
-      description: `There will be access for the red girl to use in these metaverse.`,
+      description: (
+        <>
+          There will be access for the red <br /> girl to use in these
+          metaverse.
+        </>
+      ),
     },
     {
       id: 5,
       img: require("../../Static/img/roadmap_img/5.png"),
-      description: `We are metaverse ready. We have acquired large piece of lands in both sandbox and decentraland.`,
+      description: (
+        <>
+          We are metaverse ready. We <br /> have acquired large piece of lands{" "}
+          <br /> in both sandbox and <br /> decentraland.
+        </>
+      ),
     },
     {
       id: 4,
       img: require("../../Static/img/roadmap_img/4.png"),
-      description: `Limited edition art piece. We will giveaway limited number of red girl sculpture to NFT owners.`,
+      description: (
+        <>
+          Limited edition art piece. We will <br /> giveaway limited number of
+          red <br /> girl sculpture to NFT owners.
+        </>
+      ),
     },
     {
       id: 7,
       img: require("../../Static/img/roadmap_img/7.png"),
-      description: `Exclusive ‘red girl’ party event for token holders.`,
+      description: (
+        <>
+          Exclusive ‘red girl’ party event for <br /> token holders.
+        </>
+      ),
     },
     {
       id: 8,
       img: require("../../Static/img/roadmap_img/8.png"),
-      description: `Tokenization of Sko1y’s physical painting, resvered only for our community.`,
+      description: (
+        <>
+          Tokenization of Sko1y’s physical <br /> painting, resvered only for
+          our <br /> community.
+        </>
+      ),
     },
   ];
   // const roadmap_object_mobile = roadmap_object.filter((v,id)=> id+1 < v.id);
   // console.log(roadmap_object_mobile);
   return (
     <section id="Section5">
-      <div className="section_container py-3 py-md-5 px-3 px-md-0">
+      <div className="section_container py-3 py-md-5 px-3 px-lg-0">
         <div className="title_styles text-center py-3 py-md-5">
-          <h2 className="mb-2" id="roadmap_girl"> Red Girl NFT Roadmap</h2>
+          <h2 className="mb-2" id="roadmap_girl">
+            {" "}
+            Red Girl NFT Roadmap
+          </h2>
           <span className="text-white-50 family_outfit">
             Goals and strategies in long-term
           </span>
         </div>
 
-        <div className="body_styles">
-          <div className="row g-3">
+        <div className="body_styles roadmap_body_styles">
+          <div className="row gx-3 gy-4 gy-xl-5">
             {roadmap_object.map((v) => {
               return (
-                <div className="col-lg-4" key={v.id}>
-                  <div className="col_wrapper text-start text-lg-center d-flex d-lg-block  align-items-center">
-                    <div className="item_wrapper mb-3 me-4 me-lg-0">
+                <div className="col-xl-4" key={v.id}>
+                  <div className="col_wrapper text-start text-lg-center d-flex d-xl-block  align-items-center">
+                    <div className="item_wrapper mb-3 me-4 me-xl-0">
                       <img src={v.img} alt="img" />
                     </div>
-                    <p>{v.description}</p>
+                    <p className="text-start text-xl-center">{v.description}</p>
                   </div>
                 </div>
               );
@@ -313,12 +456,18 @@ function Section6() {
         <div className="row">
           <div className="col-md-6">
             <div className="col_wrapper text-center">
-              <img className="w-75 mx-auto" src={require("../../Static/img/kaboom.png")} alt="img" />
+              <img
+                className="w-75 mx-auto"
+                src={require("../../Static/img/kaboom.png")}
+                alt="img"
+              />
             </div>
           </div>
           <div className="col-md-6">
             <div className="col_wrapper p-4">
-              <h2 className="mb-3" id="kaboom_lab">About KABOOM Lab</h2>
+              <h2 className="mb-3" id="kaboom_lab">
+                About KABOOM Lab
+              </h2>
               <p className="family_outfil">
                 Kaboom is a WEB3 laboratory comprised professionals from art
                 world to crypto sharing the same vision and coming together, to
@@ -408,7 +557,9 @@ function Section8() {
   return (
     <section id="Section8">
       <div className="section_container py-3 py-md-5 px-3 px-md-0">
-        <h2 className="mb-3 mb-md-5" id="faq">FAQ</h2>
+        <h2 className="mb-3 mb-md-5" id="faq">
+          FAQ
+        </h2>
         <div className="accordion_wrapper">
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingOne">
@@ -488,23 +639,25 @@ function Section8() {
               aria-labelledby="headingThree"
               data-mdb-parent="#accordionExample"
             >
-              <div className="accordion-body">
+              <div className="accordion-body ">
                 <ol>
-                  <li className="px-2">
+                  <li className="px-2 family_outfit">
                     Download and install the MetaMask extension for your
                     browser.
                   </li>
-                  <li className="px-2">Click on the “Get Started” button.</li>
+                  <li className="px-2 family_outfit">
+                    Click on the “Get Started” button.
+                  </li>
 
-                  <li className="px-2">
+                  <li className="px-2 family_outfit">
                     Select “Create a Wallet” and create a password.
                   </li>
 
-                  <li className="px-2">
+                  <li className="px-2 family_outfit">
                     Write down, store, or memorize your Secret Backup Phrase.
                   </li>
 
-                  <li className="px-2">
+                  <li className="px-2 family_outfit">
                     Confirm your Secret Backup Phrase to ensure you have it
                     correct.
                   </li>

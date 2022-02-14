@@ -40,14 +40,14 @@
       backdrop-filter: blur(100px);
       position: absolute;
       bottom: -35px;
-      left: 0;
+      right: 80px;
       @media (max-width: 1199px) {
         left: 50%;
         transform: translateX(-50%);
+        right: auto;
       }
       @media (max-width: 791px) {
         bottom: -60px;
-
       }
       .pass {
         font-size: 40px;
@@ -101,8 +101,48 @@
       width: 100%;
       height: 100%;
       background: url("../../Static/img/roadmap_img/roadmap_gradient.png") right
-        center/contain no-repeat;
+        150%/contain no-repeat;
+      pointer-events: none;
+    }
+    @media (min-width: 1199px) {
+      &::before {
+        content: "";
         pointer-events: none;
+        position: absolute;
+        width: 100%;
+        height: 52%;
+        bottom: 22%;
+        left: 0;
+        background: url("../../Static/img/roadmap_line.png") center 100%/100%
+          100% no-repeat;
+      }
+    }
+    @media (max-width: 1199px) {
+      &::before {
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        width: 50px;
+        height: 68%;
+        top: 266px;
+
+        left: 89px;
+        background: url("../../Static/img/roadmap_line_mobile.png") center 100% /
+          auto 100% no-repeat;
+      }
+
+      @media (max-width: 991px) {
+        &::before {
+          left: 103px;
+        }
+      }
+      @media (max-width: 772px) {
+        &::before {
+          left: 24px;
+          height: 74%;
+          top: 179px;
+        }
+      }
     }
   }
   #Section6 {

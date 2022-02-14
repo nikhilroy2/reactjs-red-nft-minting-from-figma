@@ -50,7 +50,7 @@
           backdrop-filter: blur(100px);
   position: absolute;
   bottom: -35px;
-  left: 0;
+  right: 80px;
 }
 
 @media (max-width: 1199px) {
@@ -58,6 +58,7 @@
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    right: auto;
   }
 }
 
@@ -132,8 +133,48 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("../../Static/img/roadmap_img/roadmap_gradient.png") right center/contain no-repeat;
+  background: url("../../Static/img/roadmap_img/roadmap_gradient.png") right 150%/contain no-repeat;
   pointer-events: none;
+}
+
+@media (min-width: 1199px) {
+  #Homepage #Section5::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 52%;
+    bottom: 22%;
+    left: 0;
+    background: url("../../Static/img/roadmap_line.png") center 100%/100% 100% no-repeat;
+  }
+}
+
+@media (max-width: 1199px) {
+  #Homepage #Section5::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 50px;
+    height: 68%;
+    top: 266px;
+    left: 89px;
+    background: url("../../Static/img/roadmap_line_mobile.png") center 100%/auto 100% no-repeat;
+  }
+}
+
+@media (max-width: 1199px) and (max-width: 991px) {
+  #Homepage #Section5::before {
+    left: 103px;
+  }
+}
+
+@media (max-width: 1199px) and (max-width: 772px) {
+  #Homepage #Section5::before {
+    left: 24px;
+    height: 74%;
+    top: 179px;
+  }
 }
 
 #Homepage #Section6 .section_container {

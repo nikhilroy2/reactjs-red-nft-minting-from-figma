@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 function Header(props) {
   return (
-    <header id="Header">
+    <header id="Header" className="position-sticky" style={{top: '0px'}}>
       <Navbar></Navbar>
     </header>
   );

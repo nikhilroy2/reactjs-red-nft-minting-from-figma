@@ -10,7 +10,7 @@ function Footer(props) {
               <img src={require("../../Static/img/RED.png")} alt="img" />
               <br />
               <br />
-              <span className="family_outline font-weight-lighter">
+              <span className="family_outline font-weight-lighter family_outfit">
                 Copyright @ Kaboom Lab 2022
               </span>
             </div>
@@ -20,13 +20,13 @@ function Footer(props) {
 
             <ul className="list-unstyled">
               <li className="mb-2">
-                <a href="#" className="text-white">
+                <a href="#" className="text-white family_outfit">
                   Privacy Policy
                 </a>
               </li>
 
               <li className="mb-2">
-                <a href="#" className="text-white">
+                <a href="#" className="text-white family_outfit">
                   Terms of Service
                 </a>
               </li>
