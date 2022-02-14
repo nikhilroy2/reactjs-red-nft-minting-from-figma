@@ -31,6 +31,19 @@
   margin-left: auto;
 }
 
+@media (max-width: 1199px) {
+  #Homepage #Section1 .presale_img {
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 791px) {
+  #Homepage #Section1 .presale_img {
+    max-height: 400px;
+    margin-right: auto;
+  }
+}
+
 #Homepage #Section1 .presale_starting_box {
   background: rgba(138, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(100px);
@@ -38,6 +51,20 @@
   position: absolute;
   bottom: -35px;
   left: 0;
+}
+
+@media (max-width: 1199px) {
+  #Homepage #Section1 .presale_starting_box {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 791px) {
+  #Homepage #Section1 .presale_starting_box {
+    bottom: -60px;
+  }
 }
 
 #Homepage #Section1 .presale_starting_box .pass {
@@ -55,11 +82,33 @@
 
 #Homepage #Section1 .presale_starting_box .btn_box {
   width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1199px) {
+  #Homepage #Section1 .presale_starting_box .btn_box {
+    width: 250px;
+  }
+}
+
+@media (max-width: 791px) {
+  #Homepage #Section1 .presale_starting_box .btn_box {
+    width: 100%;
+  }
 }
 
 #Homepage #Section1 .presale_starting_box .btn_box button {
   font-size: 20px;
   padding: 15px;
+}
+
+@media (max-width: 791px) {
+  #Homepage #Section1 .presale_starting_box .btn_box button {
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 #Homepage #Section4 .section_container {
@@ -84,6 +133,7 @@
   width: 100%;
   height: 100%;
   background: url("../../Static/img/roadmap_img/roadmap_gradient.png") right center/contain no-repeat;
+  pointer-events: none;
 }
 
 #Homepage #Section6 .section_container {

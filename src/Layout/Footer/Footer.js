@@ -3,8 +3,8 @@ import "./Footer.css";
 function Footer(props) {
   return (
     <footer id="Footer">
-      <div className="section_container py-3 py-md-5">
-        <div className="row">
+      <div className="section_container py-3 py-md-5 px-3 px-md-0">
+        <div className="row g-5">
           <div className="col-sm-6 col-lg-4 col-xl-3">
             <div className="col_wrapper">
               <img src={require("../../Static/img/RED.png")} alt="img" />
@@ -129,8 +129,14 @@ function Footer(props) {
               <h6 className="mb-3 text-uppercase">Subscribe Newsletter</h6>
 
               <div className="form_control_wrapper d-flex align-items-center rounded-pill">
-                <input type="email" className="px-3 py-2" placeholder="Enter you email" />
-                <button className="btn bg-white text-black btn-lg rounded-pill family_outfit text-black text-capitalize">Subscribe</button>
+                <input
+                  type="email"
+                  className="px-3 py-2"
+                  placeholder="Enter you email"
+                />
+                <button className="btn bg-white text-black btn-lg rounded-pill family_outfit text-black text-capitalize">
+                  Subscribe
+                </button>
               </div>
             </div>
           </div>

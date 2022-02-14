@@ -16,13 +16,17 @@ body {
   color: #fff;
 }
 
-section, header, footer {
+section,
+header,
+footer {
   padding-left: 80px;
   padding-right: 80px;
 }
 
 @media (max-width: 791px) {
-  section, header, footer {
+  section,
+  header,
+  footer {
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -33,8 +37,20 @@ h1 {
   line-height: 140%;
 }
 
+@media (max-width: 991px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+
 h2 {
   font-size: 40px;
+}
+
+@media (max-width: 991px) {
+  h2 {
+    font-size: 24px;
+  }
 }
 
 h4 {
@@ -58,6 +74,12 @@ p {
   color: white;
   opacity: 0.7;
   font-family: "Outfit", sans-serif;
+}
+
+@media (max-width: 991px) {
+  p {
+    font-size: 16px;
+  }
 }
 
 .family_outfit {
@@ -87,10 +109,11 @@ p {
 }
 
 .btn_hover_effect:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
-.icon_opacity_full:hover svg, .icon_opacity_full:hover rect {
+.icon_opacity_full:hover svg,
+.icon_opacity_full:hover rect {
   opacity: 1 !important;
 }
 /*# sourceMappingURL=App.css.map */

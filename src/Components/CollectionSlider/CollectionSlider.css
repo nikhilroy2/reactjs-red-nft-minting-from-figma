@@ -8,8 +8,19 @@
   width: 100%;
 }
 
+#CollectionSlider .btn_slider_box button:hover circle {
+  opacity: 1;
+}
+
 #CollectionSlider .btn_slider_box svg {
   width: 100px;
   height: 100px;
+}
+
+@media (max-width: 791px) {
+  #CollectionSlider .btn_slider_box svg {
+    width: 60px;
+    height: 60px;
+  }
 }
 /*# sourceMappingURL=CollectionSlider.css.map */

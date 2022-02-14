@@ -10,9 +10,18 @@
     }
   }
   .btn_slider_box {
+    button:hover {
+      circle {
+        opacity: 1;
+      }
+    }
     svg {
       width: 100px;
       height: 100px;
+      @media (max-width: 791px) {
+        width: 60px;
+        height: 60px;
+      }
     }
   }
 }

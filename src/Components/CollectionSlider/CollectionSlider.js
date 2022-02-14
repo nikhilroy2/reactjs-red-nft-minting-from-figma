@@ -63,7 +63,7 @@ function CollectionSlider(props) {
         </div>
       </div>
 
-      <div className="swiper_body_wrapper py-3 py-md-5">
+      <div className="swiper_body_wrapper py-5">
         <Swiper
           className="my_swiper"
           navigation={{
@@ -72,6 +72,10 @@ function CollectionSlider(props) {
             prevEl: `.prevSliderControl`, //Prev
           }}
           breakpoints={{
+            0:{
+              slidesPerView: 2.2,
+              spaceBetween: 15,
+            },
             640: {
               slidesPerView: 3,
               spaceBetween: 20,

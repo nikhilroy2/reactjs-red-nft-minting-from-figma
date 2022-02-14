@@ -59,18 +59,23 @@ function Section1() {
 
   return (
     <section id="Section1">
-      <div className="section_container py-3 py-md-5">
-        <div className="row g-0">
-          <div className="col-md-6 ">
-            <h1 className="text-uppercase">Discover Rare Collection of NFT</h1>
-            <p>
-              “Everything or nothing. Here I am, in front of me is the World of
-              Art - there is no turning back and I will force myself to love.”
-            </p>
+      <div className="section_container py-3 py-md-5 px-3 px-md-0">
+        <div className="row g-xl-0 justify-content-center">
+          <div className="col-lg-6 ">
+            <div className="box p-3 p-md-0">
+              <h1 className="text-uppercase">
+                Discover Rare Collection of NFT
+              </h1>
+              <p>
+                “Everything or nothing. Here I am, in front of me is the World
+                of Art - there is no turning back and I will force myself to
+                love.”
+              </p>
 
-            <div className="nft_box my-3 my-md-5"></div>
+              <div className="nft_box d-none d-md-block my-3 my-md-5"></div>
+            </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-12 col-md-5 col-lg-6">
             <div className="col_wrapper position-relative">
               <img
                 className="presale_img"
@@ -82,7 +87,7 @@ function Section1() {
                 <Countdown date={"2023-02-01T01:02:03"} renderer={renderer} />
 
                 <div className="btn_box mt-2">
-                  <button className="btn btn_hover_effect font-weight-bold w-100 rounded-pill bg-white text-black">
+                  <button className="btn btn_hover_effect text-capitalize font-weight-bold w-100 rounded-pill bg-white text-black">
                     Get Whitlisted Now
                   </button>
                 </div>
@@ -92,9 +97,9 @@ function Section1() {
         </div>
       </div>
 
-      <div className="section_container py-3 py-md-5">
+      <div className="section_container py-5 mt-5 px-3 px-md-0">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 order-2 order-md-1">
             <div className="col_wrapper">
               <img
                 className="w-100"
@@ -103,7 +108,7 @@ function Section1() {
               />
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 order-1 order-md-2">
             <div className="col_wrapper">
               <h2 className="mb-3 mb-md-5">About RED girl</h2>
 
@@ -141,7 +146,7 @@ function Section1() {
 function Section2() {
   return (
     <section id="Section2">
-      <div className="section_container">
+      <div className="section_container px-3 px-md-0">
         <CollectionSlider></CollectionSlider>
       </div>
     </section>
@@ -151,7 +156,7 @@ function Section2() {
 function Section3() {
   return (
     <section id="Section3">
-      <div className="section_container py-3 py-md-5">
+      <div className="section_container py-3 py-md-5 px-3 px-md-0">
         <div className="row gx-5">
           <div className="col-md-6">
             <div className="col_wrapper">
@@ -176,7 +181,11 @@ function Section3() {
           </div>
 
           <div className="col-md-6">
-            <img src={require("../../Static/img/rapity_img.png")} alt="img" />
+            <img
+              className="w-100"
+              src={require("../../Static/img/rapity_img.png")}
+              alt="img"
+            />
           </div>
         </div>
       </div>
@@ -204,9 +213,16 @@ function Section4() {
           </p>
         </div>
         <br />
-        <br />
-        <br />
-        <img src={require("../../Static/img/skoly_img.png")} alt="img" />
+        <img
+          className="d-none d-md-block"
+          src={require("../../Static/img/skoly_img.png")}
+          alt="img"
+        />
+        <img
+          className="d-md-none w-100"
+          src={require("../../Static/img/mobile_skoly_img.png")}
+          alt="img"
+        />
       </div>
     </section>
   );
@@ -261,7 +277,7 @@ function Section5() {
   // console.log(roadmap_object_mobile);
   return (
     <section id="Section5">
-      <div className="section_container py-3 py-md-5">
+      <div className="section_container py-3 py-md-5 px-3 px-md-0">
         <div className="title_styles text-center py-3 py-md-5">
           <h2 className="mb-2"> Red Girl NFT Roadmap</h2>
           <span className="text-white-50 family_outfit">
@@ -274,8 +290,8 @@ function Section5() {
             {roadmap_object.map((v) => {
               return (
                 <div className="col-lg-4" key={v.id}>
-                  <div className="col_wrapper text-center">
-                    <div className="item_wrapper mb-3">
+                  <div className="col_wrapper text-center d-flex d-lg-block  align-items-center">
+                    <div className="item_wrapper mb-3 me-4 me-lg-0">
                       <img src={v.img} alt="img" />
                     </div>
                     <p>{v.description}</p>
@@ -293,15 +309,15 @@ function Section5() {
 function Section6() {
   return (
     <section id="Section6">
-      <div className="section_container p-3 p-md-5">
+      <div className="section_container p-3 p-md-5 px-3 px-md-0">
         <div className="row">
           <div className="col-md-6">
-            <div className="col_wrapper">
-              <img src={require("../../Static/img/kaboom.png")} alt="img" />
+            <div className="col_wrapper text-center">
+              <img className="w-75 mx-auto" src={require("../../Static/img/kaboom.png")} alt="img" />
             </div>
           </div>
           <div className="col-md-6">
-            <div className="col_wrapper">
+            <div className="col_wrapper p-4">
               <h2 className="mb-3">About KABOOM Lab</h2>
               <p className="family_outfil">
                 Kaboom is a WEB3 laboratory comprised professionals from art
@@ -355,7 +371,7 @@ function Section7() {
   ];
   return (
     <section id="Section7">
-      <div className="section_container py-3">
+      <div className="section_container py-5 px-3">
         <div className="title_styles text-center py-3 py-md-5">
           <img src={require("../../Static/img/arrow.png")} alt="img" />
           <h2 className="mb-3 mt-4 text-uppercase"> Team Kaboom</h2>
@@ -391,7 +407,7 @@ function Section7() {
 function Section8() {
   return (
     <section id="Section8">
-      <div className="section_container py-3 py-md-5">
+      <div className="section_container py-3 py-md-5 px-3 px-md-0">
         <h2 className="mb-3 mb-md-5">FAQ</h2>
         <div className="accordion_wrapper">
           <div className="accordion-item">
