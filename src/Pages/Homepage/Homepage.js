@@ -24,7 +24,7 @@ function Section1() {
     <section id="Section1">
       <div className="section_container py-3 py-md-5 px-3 px-md-0">
         <div className="row g-xl-0 justify-content-center">
-          <div className="col-lg-6 ">
+          <div className="col-lg-6" style={{ paddingTop: "150px" }}>
             <div className="box p-3 p-md-0">
               <h1 className="text-uppercase">
                 Discover Rare Collection of NFT
@@ -35,7 +35,10 @@ function Section1() {
                 love.”
               </p>
 
-              <div className="nft_box d-none d-md-block my-3 my-md-5"></div>
+              <div
+                className="nft_box d-none d-md-block"
+                style={{ marginTop: "97px" }}
+              ></div>
             </div>
           </div>
           <div className="col-12 col-md-5 col-lg-6">
@@ -68,7 +71,7 @@ function Section1() {
           </div>
           <div className="col-md-6 order-1 order-md-2">
             <div className="col_wrapper">
-              <h2 className="mb-3 mb-md-5" id="about_red_girl">
+              <h2 className="mb-3 mb-md-5 text-uppercase" id="about_red_girl">
                 About RED girl
               </h2>
 
@@ -86,14 +89,17 @@ function Section1() {
                 things. They seemed to come alive and brought me to them.”
               </p>
 
-              <div className="user_info d-flex align-items-center">
+              <div
+                className="user_info d-flex align-items-center"
+                style={{ marginTop: "30px" }}
+              >
                 <img
-                  src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                  src={require("../../Static/img/author.png")}
                   className="rounded-circle me-4"
-                  style={{ width: "50px" }}
+                  style={{ width: "50px", height: "50px" }}
                   alt="Avatar"
                 />
-                <h5 className="text_red">skolyshev</h5>
+                <h5 className="text_red text-uppercase">skolyshev</h5>
               </div>
             </div>
           </div>
@@ -248,10 +254,8 @@ const AllSoldOut = () => {
 };
 function Section2() {
   return (
-    <section id="Section2">
-      <div className="section_container px-3 px-md-0">
-        <CollectionSlider></CollectionSlider>
-      </div>
+    <section  className="m-0 p-0">
+      <CollectionSlider></CollectionSlider>
     </section>
   );
 }
@@ -261,9 +265,9 @@ function Section3() {
     <section id="Section3">
       <div className="section_container py-3 py-md-5 px-3 px-md-0">
         <div className="row gx-5">
-          <div className="col-md-6">
-            <div className="col_wrapper">
-              <h2 className="mb-3 mb-md-5">Traits & Rarity</h2>
+          <div className="col-md-6 h-auto">
+            <div className="col_wrapper h-100 d-flex flex-column justify-content-center">
+              <h2 className="mb-3 mb-md-5 text-uppercase">Traits & Rarity</h2>
               <p className="family_outfit">
                 Red girl’ NFT is a community-driven collectibles NFT project.
                 ‘Red girl’ NFTs are made up with over a hundred exciting traits
@@ -301,7 +305,7 @@ function Section4() {
     <section id="Section4">
       <div className="section_container" id="Skolyshev">
         <div className="content p-3 p-md-5">
-          <h2 className="mb-3 mb-md-5"> Skolyshev</h2>
+          <h2 className="mb-3 mb-md-5 text-uppercase"> Skolyshev</h2>
 
           <p>
             Skolyshev Born in Grodno, Eastern Europe. He studied painting on
@@ -463,10 +467,10 @@ function Section6() {
               />
             </div>
           </div>
-          <div className="col-md-6">
-            <div className="col_wrapper p-4">
-              <h2 className="mb-3" id="kaboom_lab">
-                About KABOOM Lab
+          <div className="col-md-6 h-auto">
+            <div className="col_wrapper p-4 h-100 d-flex flex-column justify-content-center">
+              <h2 className="mb-3 text-uppercase" id="kaboom_lab">
+                About <br /> KABOOM Lab
               </h2>
               <p className="family_outfil">
                 Kaboom is a WEB3 laboratory comprised professionals from art
@@ -521,7 +525,7 @@ function Section7() {
   return (
     <section id="Section7">
       <div className="section_container py-5 px-3">
-        <div className="title_styles text-center py-3 py-md-5">
+        <div className="title_styles text-center py-3 py-md-5 mb-5">
           <img src={require("../../Static/img/arrow.png")} alt="img" />
           <h2 className="mb-3 mt-4 text-uppercase"> Team Kaboom</h2>
           <span className="family_outfit font_18">
@@ -536,11 +540,11 @@ function Section7() {
                   <div className="col_wrapper text-center">
                     <img src={v.img} className="w-100" alt="img" />
                     <div className="col_content py-3">
-                      <h5 className="my-2">{v.name}</h5>
+                      <h5 className="my-2 text-uppercase">{v.name}</h5>
                       <span className="font_18 font-weight-bold text_red family_outfit d-block py-2">
                         {v.subName}
                       </span>
-                      <p className="family_outfit">{v.description}</p>
+                      <p className="family_outfit" style={{opacity: .7, fontWeight: 300}}>{v.description}</p>
                     </div>
                   </div>
                 </div>
@@ -564,7 +568,7 @@ function Section8() {
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingOne">
               <button
-                className="accordion-button"
+                className="accordion-button text-uppercase font-weight-bold"
                 type="button"
                 data-mdb-toggle="collapse"
                 data-mdb-target="#collapseOne"
@@ -594,7 +598,7 @@ function Section8() {
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingTwo">
               <button
-                className="accordion-button collapsed"
+                className="accordion-button text-uppercase font-weight-bold collapsed"
                 type="button"
                 data-mdb-toggle="collapse"
                 data-mdb-target="#collapseTwo"
@@ -623,7 +627,7 @@ function Section8() {
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingThree">
               <button
-                className="accordion-button collapsed"
+                className="accordion-button text-uppercase font-weight-bold collapsed"
                 type="button"
                 data-mdb-toggle="collapse"
                 data-mdb-target="#collapseThree"
@@ -669,7 +673,7 @@ function Section8() {
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingFour">
               <button
-                className="accordion-button collapsed"
+                className="accordion-button text-uppercase font-weight-bold collapsed"
                 type="button"
                 data-mdb-toggle="collapse"
                 data-mdb-target="#collapseFour"
@@ -700,7 +704,7 @@ function Section8() {
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingFive">
               <button
-                className="accordion-button collapsed"
+                className="accordion-button text-uppercase font-weight-bold collapsed"
                 type="button"
                 data-mdb-toggle="collapse"
                 data-mdb-target="#collapseFive"
