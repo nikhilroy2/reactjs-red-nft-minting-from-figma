@@ -2,15 +2,28 @@
   position: relative;
 }
 
+@media (min-width: 1200px) {
+  #Homepage #Section1 .section_1_content_col {
+    padding-top: 150px;
+  }
+}
+
 #Homepage #Section1::before {
   content: "";
   position: absolute;
-  left: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
   background: url("../../Static/img/gradient.png") left center/contain no-repeat;
   z-index: -1;
+}
+
+@media (max-width: 1199px) {
+  #Homepage #Section1::before {
+    top: 0px;
+    height: 50%;
+    background: url("../../Static/img/gradient.png") right center/cover no-repeat;
+  }
 }
 
 #Homepage #Section1 .nft_box {
@@ -64,7 +77,8 @@
 
 @media (max-width: 791px) {
   #Homepage #Section1 .presale_starting_box {
-    bottom: -60px;
+    bottom: -40px;
+    width: 100%;
   }
 }
 
@@ -138,15 +152,44 @@
 }
 
 @media (min-width: 1199px) {
-  #Homepage #Section5::before {
-    content: "";
-    pointer-events: none;
+  #Homepage #Section5 .roadmap_box_wrapper {
+    position: relative;
+  }
+  #Homepage #Section5 .roadmap_box_wrapper span.span_line {
+    display: block;
     position: absolute;
-    width: 100%;
-    height: 52%;
-    bottom: 22%;
+    top: 0;
     left: 0;
-    background: url("../../Static/img/roadmap_line.png") center 100%/100% 100% no-repeat;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  #Homepage #Section5 .roadmap_box_wrapper span.span_line:nth-child(4) {
+    width: calc(100% - 130px);
+    top: 80px;
+    height: 250px;
+    left: auto;
+    right: 0px;
+    border-left: none;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+  #Homepage #Section5 .roadmap_box_wrapper span.span_line:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: 100%;
+    width: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  #Homepage #Section5 .roadmap_box_wrapper span.span_line:nth-child(5) {
+    width: 100%;
+    top: 330px;
+    height: 274px;
+    left: auto;
+    right: 0px;
+    border-top: none;
+    border-right: none;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
   }
 }
 
@@ -172,7 +215,7 @@
 @media (max-width: 1199px) and (max-width: 772px) {
   #Homepage #Section5::before {
     left: 24px;
-    height: 74%;
+    height: 80%;
     top: 179px;
   }
 }
@@ -195,6 +238,17 @@
   height: 100%;
   background: url("../../Static/img/team_gradient.png") right 0/contain no-repeat;
   opacity: 0.5;
+  pointer-events: none;
+}
+
+#Homepage #Section7 .card_img_height {
+  height: 376px;
+}
+
+@media (max-width: 776px) {
+  #Homepage #Section7 .card_img_height {
+    height: 275px;
+  }
 }
 
 #Homepage #Section8 {

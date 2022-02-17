@@ -1,10 +1,14 @@
 #Homepage {
   #Section1 {
     position: relative;
+    .section_1_content_col {
+      @media (min-width: 1200px) {
+        padding-top: 150px;
+      }
+    }
     &::before {
       content: "";
       position: absolute;
-      left: 0;
       bottom: 0;
       width: 100%;
       height: 100%;
@@ -12,6 +16,16 @@
         no-repeat;
       z-index: -1;
     }
+
+    @media (max-width: 1199px) {
+      &::before {
+        top: 0px;
+        height: 50%;
+        background: url("../../Static/img/gradient.png") right center/cover
+          no-repeat;
+      }
+    }
+
     .nft_box {
       width: 176px;
       height: 176px;
@@ -47,7 +61,8 @@
         right: auto;
       }
       @media (max-width: 791px) {
-        bottom: -60px;
+        bottom: -40px;
+        width: 100%;
       }
       .pass {
         font-size: 40px;
@@ -101,20 +116,65 @@
       width: 100%;
       height: 100%;
       background: url("../../Static/img/roadmap_img/roadmap_gradient.png") right
-        150%/contain no-repeat;
+        150% / contain no-repeat;
       pointer-events: none;
     }
     @media (min-width: 1199px) {
-      &::before {
-        content: "";
-        pointer-events: none;
-        position: absolute;
-        width: 100%;
-        height: 52%;
-        bottom: 22%;
-        left: 0;
-        background: url("../../Static/img/roadmap_line.png") center 100%/100%
-          100% no-repeat;
+      .roadmap_box_wrapper {
+        position: relative;
+        span.span_line {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          // &:nth-child(1) {
+          //   width: 100%;
+          //   top: 81px;
+          // }
+          // &:nth-child(2) {
+          //   width: 100%;
+          //   top: 341px;
+          // }
+
+          // &:nth-child(3) {
+          //   width: 100%;
+          //   top: 616px;
+          // }
+
+          // radius line span
+          &:nth-child(4) {
+            width: calc(100% - 130px);
+            top: 80px;
+            height: 250px;
+            left: auto;
+            right: 0px;
+            border-left: none;
+            border-top-left-radius: 0px !important;
+            border-bottom-left-radius: 0px !important;
+            &::before {
+              content: "";
+              position: absolute;
+              top: -1px;
+              right: 100%;
+              width: 140px;
+              border: 1px solid rgba(255, 255, 255, 0.05);
+            }
+          }
+
+          // radius line span
+          &:nth-child(5) {
+            width: 100%;
+            top: 330px;
+            height: 274px;
+            left: auto;
+            right: 0px;
+            border-top: none;
+            border-right: none;
+            border-top-right-radius: 0px !important;
+            border-bottom-right-radius: 0px !important;
+          }
+        }
       }
     }
     @media (max-width: 1199px) {
@@ -139,7 +199,7 @@
       @media (max-width: 772px) {
         &::before {
           left: 24px;
-          height: 74%;
+          height: 80%;
           top: 179px;
         }
       }
@@ -164,6 +224,13 @@
       background: url("../../Static/img/team_gradient.png") right 0 / contain
         no-repeat;
       opacity: 0.5;
+      pointer-events: none;
+    }
+    .card_img_height {
+      height: 376px;
+      @media (max-width: 776px) {
+        height: 275px;
+      }
     }
   }
   #Section8 {

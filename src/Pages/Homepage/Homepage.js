@@ -22,9 +22,9 @@ export default Homepage;
 function Section1() {
   return (
     <section id="Section1">
-      <div className="section_container py-3 py-md-5 px-3 px-md-0">
+      <div className="section_container py-3 py-md-5 px-0 px-md-0">
         <div className="row g-xl-0 justify-content-center">
-          <div className="col-lg-6" style={{ paddingTop: "150px" }}>
+          <div className="col-lg-6 section_1_content_col" >
             <div className="box p-3 p-md-0">
               <h1 className="text-uppercase">
                 Discover Rare Collection of NFT
@@ -254,7 +254,7 @@ const AllSoldOut = () => {
 };
 function Section2() {
   return (
-    <section  className="m-0 p-0">
+    <section className="m-0 p-0">
       <CollectionSlider></CollectionSlider>
     </section>
   );
@@ -431,21 +431,34 @@ function Section5() {
             Goals and strategies in long-term
           </span>
         </div>
+      </div>
 
-        <div className="body_styles roadmap_body_styles">
-          <div className="row gx-3 gy-4 gy-xl-5">
-            {roadmap_object.map((v) => {
-              return (
-                <div className="col-xl-4" key={v.id}>
-                  <div className="col_wrapper text-start text-lg-center d-flex d-xl-block  align-items-center">
-                    <div className="item_wrapper mb-3 me-4 me-xl-0">
-                      <img src={v.img} alt="img" />
+      <div className="roadmap_box_wrapper px-3 px-md-0">
+        <span className="span_line"></span>
+        <span className="span_line"></span>
+        <span className="span_line"></span>
+        <span className="span_line rounded-pill"></span>
+        <span className="span_line rounded-pill"></span>
+        <div className="section_container ">
+          <div className="body_styles roadmap_body_styles">
+            <div className="row gx-3 gy-4 gy-xl-5">
+              {roadmap_object.map((v) => {
+                return (
+                  <div className="col-xl-4" key={v.id}>
+                    <div className="col_wrapper text-start text-lg-center d-flex d-xl-block  align-items-center">
+                      <div
+                        className={`item_wrapper mb-3 me-4 me-xl-0 `}
+                      >
+                        <img src={v.img} alt="img" />
+                      </div>
+                      <p className="text-start text-xl-center">
+                        {v.description}
+                      </p>
                     </div>
-                    <p className="text-start text-xl-center">{v.description}</p>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
@@ -538,13 +551,18 @@ function Section7() {
               return (
                 <div className="col-12 col-sm-6 col-lg-4 col-xl-3" key={v.id}>
                   <div className="col_wrapper text-center">
-                    <img src={v.img} className="w-100" alt="img" />
+                    <img src={v.img} className="card_img_height" alt="img" />
                     <div className="col_content py-3">
                       <h5 className="my-2 text-uppercase">{v.name}</h5>
                       <span className="font_18 font-weight-bold text_red family_outfit d-block py-2">
                         {v.subName}
                       </span>
-                      <p className="family_outfit" style={{opacity: .7, fontWeight: 300}}>{v.description}</p>
+                      <p
+                        className="family_outfit"
+                        style={{ opacity: 0.7, fontWeight: 300 }}
+                      >
+                        {v.description}
+                      </p>
                     </div>
                   </div>
                 </div>
